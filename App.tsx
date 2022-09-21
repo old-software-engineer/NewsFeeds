@@ -4,7 +4,6 @@ import {NavigationContainer} from '@react-navigation/native';
 import BottomNavigation from './src/components/Navigation/BottomNavigation';
 
 const App = () => {
-  // const isDarkMode = useColorScheme() === 'dark';
   return (
     <SafeAreaView style={styles.safeArea}>
       <NavigationContainer>
