@@ -13,7 +13,7 @@ const HomePage: React.FC = () => {
     fetchTopNews(page).then((response: any) => {
       const {articles, status} = response;
       if (status === 'ok' && articles.length) {
-        setTopNews(articles);
+        setTopNews(items => [...items, ...articles]);
         setLoading(false);
       } else {
         setLoading(false);
