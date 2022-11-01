@@ -5,16 +5,25 @@ import BottomNavigation from './src/components/Navigation/BottomNavigation';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import NewsDetails from './src/components/Screens/newsDetails/NewsDetails';
 
+// Deep Linking setup with different path
 const linking = {
   prefixes: ['newsapp://'],
   config: {
-    initialRouteName: 'Home',
     screens: {
       Home: {
         path: 'home',
       },
       Details: {
         path: 'details',
+        parse: {
+          id: (id: number) => `${id}`,
+        },
+      },
+      NewsDetails: {
+        path: 'newsdetails/:search',
+        parse: {
+          id: (id: number) => `${id}`,
+        },
       },
     },
   },
@@ -22,7 +31,7 @@ const linking = {
 
 const Stack = createNativeStackNavigator();
 
-const App = () => (
+const App: React.FC = (): JSX.Element => (
   <SafeAreaView style={styles.safeArea}>
     <NavigationContainer linking={linking}>
       <Stack.Navigator>
@@ -35,6 +44,11 @@ const App = () => (
           name="Details"
           component={NewsDetails}
           options={{title: 'Details'}}
+        />
+        <Stack.Screen
+          name="NewsDetails"
+          component={NewsDetails}
+          options={{title: 'NewsDetails'}}
         />
       </Stack.Navigator>
     </NavigationContainer>

@@ -4,11 +4,14 @@ import {fetchTopNews} from '../../../config/api/homeApi';
 import NewsCard from './components/NewsCard';
 import {isCloseToBottom} from '../../../common/helper';
 
+//HomePage UI
+
 const HomePage: React.FC = () => {
   const [topNews, setTopNews] = useState<Array<any>[]>([]);
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
 
+  // fetching top News
   useEffect(() => {
     fetchTopNews(page).then((response: any) => {
       const {articles, status} = response;
