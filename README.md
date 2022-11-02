@@ -7,10 +7,10 @@ This is an NewsApp build on React-Native and NewsAPI using Typescript.
 ## Tech Stack that you need
 
 - React: 18,
-- React-Native: 0.69.5,
+- React-Native: 0.69.5
 - Typescript: 4.4.4
 - Node: v16
-- Axios: 6.2.3,
+- Axios: 6.2.3
 - NewsAPI
 
 
@@ -78,13 +78,15 @@ Then running
 
 ## Screens
 
-- Home
+- Home <br /><br />
 ![App Screenshot](https://i.postimg.cc/25BND9xt/Screenshot-2022-11-02-at-3-54-28-PM.png)
-- NewsDetails
+
+- NewsDetails <br /><br />
 ![App Screenshot](https://i.postimg.cc/qRbsxwPk/Screenshot-2022-11-02-at-3-55-13-PM.png)
-- Setting
+
+- Setting <br /><br />
 ![App Screenshot](https://i.postimg.cc/vT8fFPKV/Screenshot-2022-11-02-at-5-02-40-PM.png)
 
 ## Share Screen
-
+- Sharing the link of the News <br /><br />
 ![App Screenshot](https://i.postimg.cc/7ZpHTmgr/Screenshot-2022-11-02-at-5-03-17-PM.png)
