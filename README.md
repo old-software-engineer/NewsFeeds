@@ -88,5 +88,5 @@ Then running
 ![App Screenshot](https://i.postimg.cc/vT8fFPKV/Screenshot-2022-11-02-at-5-02-40-PM.png)
 
 ## Share Screen
-
+- <br /><br />
 ![App Screenshot](https://i.postimg.cc/7ZpHTmgr/Screenshot-2022-11-02-at-5-03-17-PM.png)
