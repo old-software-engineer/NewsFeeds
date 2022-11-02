@@ -1,7 +1,7 @@
 
 # NewsDetail
 
-This is an NewsApp build on React-Native and NewsAPI.
+This is an NewsApp build on React-Native and NewsAPI using Typescript.
 
 
 ## Tech Stack that you need
@@ -76,6 +76,7 @@ Then running
 - Promise
 - Sharing the news
 
+![App Screenshot](https://i.postimg.cc/7ZpHTmgr/Screenshot-2022-11-02-at-5-03-17-PM.png)
 
 ## Screens
 
@@ -84,4 +85,4 @@ Then running
 - NewsDetails
 ![App Screenshot](https://i.postimg.cc/qRbsxwPk/Screenshot-2022-11-02-at-3-55-13-PM.png)
 - Setting
-![App Screenshot](https://i.postimg.cc/Dyqctrsc/Screenshot-2022-11-02-at-3-54-51-PM.png)
+![App Screenshot](https://i.postimg.cc/vT8fFPKV/Screenshot-2022-11-02-at-5-02-40-PM.png)

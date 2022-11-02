@@ -12,6 +12,13 @@ const homeStyles = StyleSheet.create({
   cardImage: {width: '100%', height: 300, marginVertical: 20},
   cardDescription: {fontWeight: '200'},
   marginTop: {marginTop: 20},
+  centerMain: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginVertical: '60%',
+  },
+  bold: {fontWeight: '700'},
 });
 
 export default homeStyles;
