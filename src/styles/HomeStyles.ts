@@ -11,7 +11,7 @@ const homeStyles = StyleSheet.create({
   title: {fontSize: 17, fontWeight: '500'},
   cardImage: {width: '100%', height: 300, marginVertical: 20},
   cardDescription: {fontWeight: '200'},
-  marginTop: {marginTop: '20px'},
+  marginTop: {marginTop: 20},
 });
 
 export default homeStyles;

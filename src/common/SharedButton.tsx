@@ -10,7 +10,7 @@ const SharedButton: React.FC<Props> = ({title}: any) => {
   const shareData = async () => {
     try {
       await Share.share({
-        message: `newsdetails/${title}`,
+        message: `newsapp://newsdetails/${title}`,
       });
     } catch (error: any) {
       Alert.alert(error.message);

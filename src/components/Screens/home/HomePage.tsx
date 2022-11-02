@@ -1,10 +1,8 @@
-import {View, Text, ScrollView} from 'react-native';
 import React, {useEffect, useState} from 'react';
 import {fetchTopNews} from '../../../config/api/homeApi';
-import NewsCard from './components/NewsCard';
-import {isCloseToBottom} from '../../../common/helper';
+import NewsCards from '../common/NewsCards';
 
-//HomePage UI
+// HomePage UI
 
 const HomePage: React.FC = () => {
   const [topNews, setTopNews] = useState<Array<any>[]>([]);
@@ -25,23 +23,14 @@ const HomePage: React.FC = () => {
   }, [page]);
 
   return (
-    <View>
-      {loading ? (
-        <Text>loading ....</Text>
-      ) : (
-        <ScrollView
-          onScroll={({nativeEvent}) => {
-            if (isCloseToBottom(nativeEvent)) {
-              setTimeout(() => {
-                setPage(page + 1);
-              }, 1000);
-            }
-          }}
-          scrollEventThrottle={0}>
-          <NewsCard topNews={topNews} />
-        </ScrollView>
-      )}
-    </View>
+    <NewsCards
+      page={page}
+      news={topNews}
+      setPage={value => {
+        setPage(value);
+      }}
+      loading={loading}
+    />
   );
 };
 

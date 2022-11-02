@@ -1,8 +1,6 @@
-import {View, Text, ScrollView} from 'react-native';
 import React, {useEffect, useState} from 'react';
 import {fetchCustomNews} from '../../../config/api/homeApi';
-import {isCloseToBottom} from '../../../common/helper';
-import NewsCard from './components/newsCard';
+import NewsCards from '../common/NewsCards';
 
 // Filtered News using sources
 
@@ -29,23 +27,14 @@ const NewsDetails: React.FC = (props: any) => {
   }, [page, param]);
 
   return (
-    <View>
-      {loading ? (
-        <Text>loading ....</Text>
-      ) : (
-        <ScrollView
-          onScroll={({nativeEvent}) => {
-            if (isCloseToBottom(nativeEvent)) {
-              setTimeout(() => {
-                setPage(page + 1);
-              }, 1000);
-            }
-          }}
-          scrollEventThrottle={0}>
-          <NewsCard topNews={news} />
-        </ScrollView>
-      )}
-    </View>
+    <NewsCards
+      page={page}
+      news={news}
+      setPage={value => {
+        setPage(value);
+      }}
+      loading={loading}
+    />
   );
 };
 
