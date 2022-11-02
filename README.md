@@ -76,8 +76,6 @@ Then running
 - Promise
 - Sharing the news
 
-![App Screenshot](https://i.postimg.cc/7ZpHTmgr/Screenshot-2022-11-02-at-5-03-17-PM.png)
-
 ## Screens
 
 - Home
@@ -86,3 +84,7 @@ Then running
 ![App Screenshot](https://i.postimg.cc/qRbsxwPk/Screenshot-2022-11-02-at-3-55-13-PM.png)
 - Setting
 ![App Screenshot](https://i.postimg.cc/vT8fFPKV/Screenshot-2022-11-02-at-5-02-40-PM.png)
+
+## Share Screen
+
+![App Screenshot](https://i.postimg.cc/7ZpHTmgr/Screenshot-2022-11-02-at-5-03-17-PM.png)
