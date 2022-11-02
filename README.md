@@ -78,15 +78,15 @@ Then running
 
 ## Screens
 
-- Home <br />
+- Home <br /><br />
 ![App Screenshot](https://i.postimg.cc/25BND9xt/Screenshot-2022-11-02-at-3-54-28-PM.png)
 
-- NewsDetails <br />
+- NewsDetails <br /><br />
 ![App Screenshot](https://i.postimg.cc/qRbsxwPk/Screenshot-2022-11-02-at-3-55-13-PM.png)
 
-- Setting <br />
+- Setting <br /><br />
 ![App Screenshot](https://i.postimg.cc/vT8fFPKV/Screenshot-2022-11-02-at-5-02-40-PM.png)
 
 ## Share Screen
-<br />
+
 ![App Screenshot](https://i.postimg.cc/7ZpHTmgr/Screenshot-2022-11-02-at-5-03-17-PM.png)
