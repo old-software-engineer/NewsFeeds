@@ -8,7 +8,7 @@ interface ApiParams {
   params: object;
 }
 
-const ApiRequest = ({requestType, RequestUrl, params}: ApiParams) => {
+const ApiRequest = ({requestType, RequestUrl, params}: ApiParams): any => {
   return new Promise(resolve => {
     const headers = {
       Accept: 'application/json',

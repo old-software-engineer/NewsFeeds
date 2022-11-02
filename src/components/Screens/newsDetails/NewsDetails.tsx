@@ -1,31 +1,35 @@
 import React, {useEffect, useState} from 'react';
-import {fetchTopNews} from '../../../config/api/homeApi';
+import {fetchCustomNews} from '../../../config/api/homeApi';
 import NewsCards from '../common/NewsCards';
 
-// HomePage UI
+// Filtered News using sources
 
-const HomePage: React.FC = () => {
-  const [topNews, setTopNews] = useState<Array<any>[]>([]);
+const NewsDetails: React.FC = (props: any) => {
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
+  const [news, setNews] = useState<Array<any>[]>([]);
 
-  // fetching top News
+  const param = props?.route?.params?.search
+    ? props?.route?.params?.search
+    : props?.route?.params?.title;
+
+  // fetching News by source id
   useEffect(() => {
-    fetchTopNews(page).then((response: any) => {
+    fetchCustomNews(param, page).then((response: any) => {
       const {articles, status} = response;
       if (status === 'ok' && articles.length) {
-        setTopNews(items => [...items, ...articles]);
+        setNews(items => [...items, ...articles]);
         setLoading(false);
       } else {
         setLoading(false);
       }
     });
-  }, [page]);
+  }, [page, param]);
 
   return (
     <NewsCards
       page={page}
-      news={topNews}
+      news={news}
       setPage={value => {
         setPage(value);
       }}
@@ -34,4 +38,4 @@ const HomePage: React.FC = () => {
   );
 };
 
-export default HomePage;
+export default NewsDetails;
