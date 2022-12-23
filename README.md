@@ -1,10 +1,9 @@
 
-# NewsDetail
+# About
 
-This is an NewsApp build on React-Native and NewsAPI using Typescript.
+This is an News App build on React-Native and NewsAPI using Typescript.
 
-
-## Tech Stack that you need
+## Tools & Libraries
 
 - React: 18,
 - React-Native: 0.69.5
@@ -13,8 +12,16 @@ This is an NewsApp build on React-Native and NewsAPI using Typescript.
 - Axios: 6.2.3
 - NewsAPI
 
+## Concepts
 
-## Running the project
+- DeepLinking: Deep Linking is a technique in which a given URL or resource is used to open a specific page or screen on mobile
+- Promise/Promise.all: The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value. The Promise.all() method takes an iterable of promises as input and returns a single Promise.
+- Sharing functionality: Sharing the news to other users
+
+## Linting and Formatting
+- ESLint: It is a linter that you can integrate into your Visual Studio Code setup in order to ensure code integrity.
+
+## Installation
 
 Clone the project
 
@@ -59,34 +66,17 @@ Then running
   yarn ios
 ```
 
-## Code Overview
-
-#### Folders
-
-- ```index.js``` Our app start with here
-- ```app.tsx``` It contains Navigating screens
-- ```src/config``` It contains axios request methods and environment file
-- ```src/component``` It contains all the screens
-- ```src/common``` It contains common methods and components.
-
-
-#### Some Additional Feature Used
-
-- DeepLinking
-- Promise
-- Sharing the news
-
 ## Screens
 
 - Home <br /><br />
-![App Screenshot](https://i.postimg.cc/25BND9xt/Screenshot-2022-11-02-at-3-54-28-PM.png)
+  ![App Screenshot](https://i.postimg.cc/25BND9xt/Screenshot-2022-11-02-at-3-54-28-PM.png)
 
 - NewsDetails <br /><br />
-![App Screenshot](https://i.postimg.cc/qRbsxwPk/Screenshot-2022-11-02-at-3-55-13-PM.png)
+  ![App Screenshot](https://i.postimg.cc/qRbsxwPk/Screenshot-2022-11-02-at-3-55-13-PM.png)
 
 - Setting <br /><br />
-![App Screenshot](https://i.postimg.cc/vT8fFPKV/Screenshot-2022-11-02-at-5-02-40-PM.png)
+  ![App Screenshot](https://i.postimg.cc/vT8fFPKV/Screenshot-2022-11-02-at-5-02-40-PM.png)
 
 ## Share Screen
 - Sharing the link of the News <br /><br />
-![App Screenshot](https://i.postimg.cc/7ZpHTmgr/Screenshot-2022-11-02-at-5-03-17-PM.png)
+  ![App Screenshot](https://i.postimg.cc/7ZpHTmgr/Screenshot-2022-11-02-at-5-03-17-PM.png)
